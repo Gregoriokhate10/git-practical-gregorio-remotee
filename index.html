@@ -3,43 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Login</title>
+    <title>My Web Page</title>
 </head>
 <body>
-<label for="username">Username: </label>
-<input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off">
-<br><br>
-<label for="password">Password: </label>
-<input tpe="password" name="password" id="password" placeholder="Enter your password">
-<br><br>
-<button id="submit">Login</button>
+ <h1>Hello World</h1>
 
-<script>
-    let defusername = "admin";
-    let defpassword = "admin123";
-    let btnsubmit = document.querySelector("#submit");
+ <p id="parag1">This is my practical examination</p>
 
-    // 
-    
-    btnsubmit.addEventListener("click", function(){
-        let txtusername = document.querySelector("#username").values;
-        let txtpassword = document.querySelector("#password").values;
-
-        let trimmedusername = txtusername.trim ();
-        let trimmedpaswword = txtpassword.trim ();
-
-        if (trimmedusername === "" || trimmedusername === ""){
-            alert("Username and Password are required.")
-        }else{
-            if (defusername === trimmedusername && defpassword === trimmedpaswword){
-                localStorage.setItem("LoggedIn", true);
-                localStorage.setItem("username", defusername);
-                // window.location.href = "profile.html";
-            }else{
-                alert("Incorrect Username or Password.");
-            }
-        }
-    });
-</script>
+ <button id="btn1">alert Me</button>
+ <button id="btn2">Change color</button>
 </body>
 </html>
